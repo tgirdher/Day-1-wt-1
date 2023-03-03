@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compitable" content="IE=edge">
+    <meta name="spidey" content="IE=edge">
+    <title> Javascript </title>
+</head>
+<body>
+    <style>
+        body{
+            font-size: 30px;
+            text-align: center;
+            color: blueviolet
+        }
+    </style>
+    <script>
+        function Fibonacci(a,b,c, count) {
+            var a = 0;
+            var count = prompt("Insert a number");
+            var b;
+            var c;
+            for (i=1; i<count; i++) {
+                if (i==1) {
+                    document.write(a+" ");
+                    b= a+1;
+                }  else if (i==2) {
+                     document.write(b+" ");
+                }  else {
+                    c = a + b;
+                    document.write(c+" ");
+                    a = b;
+                    b = c;
+                }
+            }  
+            document.write("<br>")
+        }
+        Fibonacci();
+    </script>
+</body>
+</html>
